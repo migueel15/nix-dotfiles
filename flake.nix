@@ -35,7 +35,7 @@
         sudo cp "$DOTFILES_DIR/configuration.nix" /etc/nixos/
 
         echo "Aplicando la configuración..."
-        sudo nixos-rebuild switch --flake "$DOTFILES_DIR"
+        sudo nixos-rebuild switch --flake "$DOTFILES_DIR" --no-write-lock-file
 
         echo "Sistema listo con la configuración de dotfiles."
       '';
