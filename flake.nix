@@ -16,7 +16,7 @@
         # Clonar el repositorio si no existe
         if [ ! -d "$DOTFILES_DIR" ]; then
           echo "Clonando dotfiles en $DOTFILES_DIR..."
-          git clone https://github.com/migueel15/dotfiles.git "$DOTFILES_DIR"
+          git clone https://github.com/migueel15/nix-dotfiles.git "$DOTFILES_DIR"
         else
           echo "El repositorio de dotfiles ya existe, actualizando..."
           cd "$DOTFILES_DIR"
