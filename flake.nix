@@ -23,6 +23,11 @@
           git pull
         fi
 
+        cd "$DOTFILES_DIR"
+
+        echo "Actualizando dependencias del flake..."
+        nix flake update
+
         echo "Generando configuración de hardware..."
         sudo nixos-generate-config --force
 
@@ -36,4 +41,3 @@
       '';
     };
 }
-
